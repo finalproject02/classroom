@@ -1,0 +1,96 @@
+.nabMenuBar {
+  color: black;
+  padding-left: 1%;
+  font-size: 25px;
+}
+.nav-menu-item {
+  text-decoration: none;
+  color: black;
+}
+.nav-menu-item:hover {
+  text-decoration: none;
+  color: black;
+  border-left: 5px solid white;
+  transition: 0.1s;
+}
+.sideNavOpen {
+  height: 100%;
+  width: 23%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #f8f9fa;
+}
+.sideNavClose {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #f8f9fa;
+}
+.ContentOverlay {
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ContentOverlayClose {
+  display: none;
+}
+.Content {
+  margin-left: 60px;
+  margin-top: 60px;
+  z-index: 5;
+}
+@media (max-width: 575.98px) {
+  .Content {
+    margin-left: 0px;
+  }
+  .sideNavClose {
+    visibility: hidden;
+  }
+}
+.gbimg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #000),
+    url(../images/Jahedpic.jpg);
+  background-repeat: no-repeat;
+}
+.imgPosition {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+.cardHover:hover {
+  transform: scale(0.98);
+  transition: all 1s ease;
+}
+.navImg {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.603), #000),
+    url(../images/Jahedpic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 15px;
+}
