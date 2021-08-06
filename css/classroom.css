@@ -116,3 +116,20 @@
   top: 20%;
   right: 3%;
 }
+
+.nav-right-pos{
+  position: relative;
+  /* max-width: 300px; */
+}
+.join-class{
+  position: absolute;
+  top: 0;
+  right: 45px;
+}
+
+@media (max-width: 650px){
+  .nav-right-pos{
+    min-width: 100%; 
+    
+  }
+}
