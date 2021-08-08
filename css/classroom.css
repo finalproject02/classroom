@@ -120,3 +120,6 @@
   border-bottom: 5px solid #000;
   border-radius: 5px;
 }
+.chatbox {
+  z-index: 10;
+}
