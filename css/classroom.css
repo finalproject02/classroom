@@ -116,23 +116,48 @@
   top: 20%;
   right: 3%;
 }
-.nav-right-pos{
+.nav-right-pos {
   position: relative;
   /* max-width: 300px; */
 }
-.join-class{
+.join-class {
   position: absolute;
   top: 0;
   right: 45px;
 }
 
-@media (max-width: 650px){
-  .nav-right-pos{
-    min-width: 100%; 
-    
+@media (max-width: 650px) {
+  .nav-right-pos {
+    min-width: 100%;
   }
 }
 .active {
   border-bottom: 5px solid #000;
   border-radius: 5px;
+}
+.chatbox {
+  z-index: 10;
+}
+
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  /* border-radius: 70%; */
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  height: 33px;
+  position: absolute;
+  right: 0%;
+  bottom: 6%;
+  width: 12%;
+}
+.zIndex {
+  z-index: 999;
+}
+.index {
+  z-index: 5;
+}
+.hrWidth {
+  width: 95%;
 }
