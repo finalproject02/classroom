@@ -96,8 +96,8 @@
 }
 .postImg {
   align-self: center;
-    height: 2.5rem;
-    width: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
 }
 .comment {
@@ -109,8 +109,8 @@
 }
 .commentImg {
   align-self: initial;
-    height: 2rem;
-    width: 2rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
 }
 .commentSend {
@@ -137,24 +137,24 @@
   border-bottom: 2px solid #000;
 }
 
-.navbar{
+.navbar {
   padding: 0 !important;
 }
-.textarea-show{
+.textarea-show {
   display: block;
 }
-#announceOpen:hover{
+#announceOpen:hover {
   cursor: pointer;
 }
 .asQXV {
-  letter-spacing: .01785714em;
+  letter-spacing: 0.01785714em;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
   color: #3c4043;
 }
 .PazDv {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .chatbox {
@@ -171,7 +171,7 @@
   height: 33px;
   position: absolute;
   right: 0%;
-  bottom: 6%;
+  bottom: 8%;
   width: 12%;
 }
 .zIndex {
@@ -183,4 +183,7 @@
 .hrWidth {
   width: 95%;
 }
-
+#profileShow {
+  display: none;
+  z-index: 999;
+}

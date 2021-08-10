@@ -24,3 +24,16 @@ function SideMenuOpenClose() {
     ContentOverlayID.addClass("ContentOverlayClose");
   }
 }
+
+// profile show
+const loginBtn = document
+  .getElementById("profile")
+  .addEventListener("click", function () {
+    const profileToggle = document.getElementById("profileShow");
+
+    if (profileToggle.style.display === "none") {
+      profileToggle.style.display = "block";
+    } else {
+      profileToggle.style.display = "none";
+    }
+  });
