@@ -94,6 +94,13 @@
   padding: 20px;
   border-radius: 10px;
 }
+.heroProfile {
+  height: 15rem;
+}
+.heroPosition {
+  top: 24%;
+  left: 44%;
+}
 .postImg {
   align-self: center;
   height: 2.5rem;
@@ -174,9 +181,6 @@
   bottom: 8%;
   width: 12%;
 }
-.zIndex {
-  z-index: 999;
-}
 .index {
   z-index: 5;
 }
@@ -185,5 +189,4 @@
 }
 #profileShow {
   display: none;
-  z-index: 999;
 }

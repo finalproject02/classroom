@@ -26,7 +26,7 @@ function SideMenuOpenClose() {
 }
 
 // profile show
-const loginBtn = document
+const profileBtn = document
   .getElementById("profile")
   .addEventListener("click", function () {
     const profileToggle = document.getElementById("profileShow");
