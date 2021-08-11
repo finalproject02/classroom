@@ -66,6 +66,14 @@
   .sideNavClose {
     visibility: hidden;
   }
+  .dropdown-menu[data-bs-popper] {
+    right: -400px;
+  }
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -133px;
+  margin-top: 0.125rem;
 }
 .gbimg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #000),
@@ -189,4 +197,20 @@
 }
 #profileShow {
   display: none;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+.accordion-button::after {
+  content: none;
+}
+.positionBtn {
+  position: relative;
+  left: 99%;
+  top: -50px;
+}
+.big-checkbox {
+  width: 20px;
+  height: 20px;
 }
