@@ -66,6 +66,14 @@
   .sideNavClose {
     visibility: hidden;
   }
+  .dropdown-menu[data-bs-popper] {
+    right: -400px;
+  }
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -160px;
+  margin-top: 0.125rem;
 }
 .gbimg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #000),
@@ -94,10 +102,17 @@
   padding: 20px;
   border-radius: 10px;
 }
+.heroProfile {
+  height: 15rem;
+}
+.heroPosition {
+  top: 24%;
+  left: 44%;
+}
 .postImg {
   align-self: center;
-    height: 2.5rem;
-    width: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
 }
 .comment {
@@ -109,8 +124,8 @@
 }
 .commentImg {
   align-self: initial;
-    height: 2rem;
-    width: 2rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
 }
 .commentSend {
@@ -137,24 +152,24 @@
   border-bottom: 2px solid #000;
 }
 
-.navbar{
+.navbar {
   padding: 0 !important;
 }
-.textarea-show{
+.textarea-show {
   display: block;
 }
-#announceOpen:hover{
+#announceOpen:hover {
   cursor: pointer;
 }
 .asQXV {
-  letter-spacing: .01785714em;
+  letter-spacing: 0.01785714em;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
   color: #3c4043;
 }
 .PazDv {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .chatbox {
@@ -171,11 +186,8 @@
   height: 33px;
   position: absolute;
   right: 0%;
-  bottom: 6%;
+  bottom: 8%;
   width: 12%;
-}
-.zIndex {
-  z-index: 999;
 }
 .index {
   z-index: 5;
@@ -183,4 +195,22 @@
 .hrWidth {
   width: 95%;
 }
+#profileShow {
+  display: none;
+}
 
+.dropdown-toggle::after {
+  content: none;
+}
+.accordion-button::after {
+  content: none;
+}
+.positionBtn {
+  position: relative;
+  left: 99%;
+  top: -50px;
+}
+.big-checkbox {
+  width: 20px;
+  height: 20px;
+}
