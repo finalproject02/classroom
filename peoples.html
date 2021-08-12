@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <nav class="navbar shadow-sm fixed-top navbar-light bg-light">
+    <nav class="navbar shadow-sm stickey-top navbar-light bg-light">
         <div class="container-fluid">
-            <a id="NavMenuBar" class="navbar-brand nabMenuBar" href="#"><i class="fa fa-bars"></i><span
-                    class="p-2 ms-2 text-info">Classroom</span></a>
+            <a id="NavMenuBar" class="navbar-brand nabMenuBar w-25" href="#"><i class="fa fa-bars"></i><span
+                    class="p-2 ms-2 text-info">Neural Network And Fuzzy Logic</span></a>
 
             <div class="navbar-nav mx-auto order-0 d-inline-block">
                 <li class="nav-item d-inline-block">
@@ -30,8 +30,14 @@
                 <li class="nav-item d-inline-block">
                     <a class="nav-link p-3 fw-bolder" href="classwork.html">Classwork</a>
                 </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link p-3 fw-bolder" href="classwork.html">Meet</a>
+                </li>
                 <li class="nav-item d-inline-block active">
                     <a class="nav-link p-3 fw-bolder" href="peoples.html">People</a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link p-3 fw-bolder" href="marks.html">Marks</a>
                 </li>
             </div>
 
@@ -43,7 +49,7 @@
         </div>
     </nav>
 
-    <div id="SideNavID" class="sideNavClose mt-5">
+    <div id="SideNavID" class="sideNavClose">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="nav-link  " aria-current="page" href="#"><i class="fa m-2 fa-home"></i><span
@@ -89,12 +95,15 @@
 
     <div id="ContentOverlayID" class="ContentOverlayClose">
     </div>
-    <section id="people" class="mt-5">
-        <div class="container mt-5">
-            <div class="row mt-5 d-flex justify-content-center">
+    <section id="people">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
                 <div class="col-md-8 mt-5">
                     <!-- Teachers -->
-                    <h2 class="mt-5 text-info">Teachers</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="text-info">Teachers</h2>
+                        <i title="invite teacher" class="fas fa-user-plus"></i>
+                    </div>
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -106,7 +115,8 @@
                         <div class="d-flex align-items-center">
                             <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
                                     style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
-                            <a href="mailto: mdjahedahmed12@gmail.com"><i class="fa fa-envelope p-2" style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
+                            <a href="mailto: mdjahedahmed12@gmail.com"><i class="fa fa-envelope p-2"
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
                         </div>
                     </div>
                     <hr class="text-primary">
@@ -120,7 +130,8 @@
                         <div class="d-flex align-items-center">
                             <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
                                     style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
-                            <a href="mailto: mdjahedahmed12@gmail.com"><i class="fa fa-envelope p-2" style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
+                            <a href="mailto: mdjahedahmed12@gmail.com"><i class="fa fa-envelope p-2"
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -129,10 +140,74 @@
 
                     <!-- Classmates -->
 
-                    <h2 class="mt-5 text-info">Classmates</h2>
-                    <hr class="text-primary">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <h2 class="text-info">Classmates</h2>
                         <div class="d-flex align-items-center">
+                            <strong>12 students</strong>
+                            <i title="invite student" class="fas fa-user-plus ps-2"></i>
+                        </div>
+                    </div>
+                    <hr class="text-primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-select" name="" id="">
+                                    <option value="">Actions</option>
+                                    <option value="">Email</option>
+                                    <option value="">Remove</option>
+                                    <option value="">Mute</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" name="" id="">
+                                <option value="">Sort</option>
+                                <option value="">Sort by firstname</option>
+                                <option value="">Sort by surname</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="text-primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
+                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                            <div class="p-2 ms-2">
+                                <h6 class="card-title">Md Jahed Miah</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a> -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><button class="dropdown-item" type="button">Email</button>
+                                    </li>
+                                    <li><button class="dropdown-item" type="button">Message</button>
+                                    </li>
+                                    <li><button class="dropdown-item" type="button">Remove</button>
+                                    </li>
+                                    <li><button class="dropdown-item" type="button">Mute</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
                             <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
                             <div class="p-2 ms-2">
                                 <h6 class="card-title">Md Jahed Miah</h6>
@@ -140,12 +215,15 @@
                         </div>
                         <div>
                             <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
-                                    style='font-size:30px;color:blue'></i></a>
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
                         </div>
                     </div>
                     <hr class="text-primary">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
                             <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
                             <div class="p-2 ms-2">
                                 <h6 class="card-title">Md Jahed Miah</h6>
@@ -153,9 +231,47 @@
                         </div>
                         <div>
                             <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
-                                    style='font-size:30px;color:blue'></i></a>
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
                         </div>
                     </div>
+
+
+                    <hr class="text-primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
+                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                            <div class="p-2 ms-2">
+                                <h6 class="card-title">Md Jahed Miah</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
+                        </div>
+                    </div>
+
+
+                    <hr class="text-primary">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="pe-3">
+                                <input class="big-checkbox" type="checkbox" name="" id="">
+                            </div>
+                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                            <div class="p-2 ms-2">
+                                <h6 class="card-title">Md Jahed Miah</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
+                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
+                        </div>
+                    </div>
+
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -170,7 +286,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -185,7 +301,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -200,7 +316,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -215,7 +331,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -230,7 +346,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -245,7 +361,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -260,7 +376,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -275,7 +391,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -290,7 +406,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -305,7 +421,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -320,7 +436,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -335,7 +451,7 @@
                         </div>
                     </div>
 
-                    
+
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -350,52 +466,7 @@
                         </div>
                     </div>
 
-                    
-                    <hr class="text-primary">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                            <div class="p-2 ms-2">
-                                <h6 class="card-title">Md Jahed Miah</h6>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
-                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
-                        </div>
-                    </div>
 
-                    
-                    <hr class="text-primary">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                            <div class="p-2 ms-2">
-                                <h6 class="card-title">Md Jahed Miah</h6>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
-                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
-                        </div>
-                    </div>
-
-                    
-                    <hr class="text-primary">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                            <div class="p-2 ms-2">
-                                <h6 class="card-title">Md Jahed Miah</h6>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="classroomChat.html"><i class='far fa-comment-dots p-2'
-                                    style='font-size:30px;color:rgb(72, 205, 245)'></i></a>
-                        </div>
-                    </div>
-
-                    
                     <hr class="text-primary">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
