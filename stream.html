@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <nav class="navbar shadow-sm fixed-top navbar-light bg-light">
+    <nav class="navbar shadow-sm sticky-top navbar-light bg-light">
         <div class="container-fluid">
-            <a id="NavMenuBar" class="navbar-brand nabMenuBar" href="#"><i class="fa fa-bars"></i><span
-                    class="p-2 text-info">Classroom</span></a>
+            <a id="NavMenuBar" class="navbar-brand nabMenuBar w-25" href="#"><i class="fa fa-bars"></i><span
+                    class="p-2 text-info">Neural Network & Fuzzy Logic</span></a>
 
             <div class="navbar-nav mx-auto order-0 d-inline-block">
                 <li class="nav-item d-inline-block active">
@@ -38,11 +38,33 @@
                 </li>
             </div>
 
-            <div class="navbar-nav ml-auto">
-                <li class="nav-item d-inline-block">
-                    <a class="nav-link p-3 fw-bolder" href="#">Profile</a>
-                </li>
-            </div>
+            <!-- <li class="nav-item d-inline-block">
+                    <a class="nav-link p-3 fw-bolder" href="chat"><i class="far fa-comment"></i></a>
+                </li> -->
+            <li class="dropdown list-unstyled">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Profile
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <div class="w-100">
+                        <!-- <div class="hero heroProfile"></div> -->
+                        <div class="p-4 text-center">
+                            <img src="images/Jahedpic.jpg" alt="" class="rounded-circle img-fluid w-25">
+                        </div>
+                        <div class="">
+                            <h6 class="text-center pt-1">Md Jahed Miah</h6>
+                            <p class="text-center p-1">mdjahedahmed666@gmail.com</p>
+                            <p class="text-muted text-center p-1">Id:1732020009</p>
+                            <p class="text-muted text-center p-1">Batch:46<sup>th</sup></p>
+                            <p class="text-muted text-center p-1">Department:CSE</p>
+                        </div>
+                        <div class="text-center mb-4">
+                            <a href="classroomChat.html" class="btn border w-75 text-decoration-none">chat</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
         </div>
     </nav>
 
@@ -95,11 +117,15 @@
 
 
     <!-- Hero Section -->
-    <section class="container mt-5 mt-sm-5">
+    <section class="container">
         <div class="row">
-            <div class="hero mt-5 mt-sm-5">
-                <div class="mt-5 mt-sm-5">
+            <div class="hero mt-5">
+                <div class="m-4 text-center">
+                    <h2 class="text-white">CSE-3321</h2>
                     <h2 class="text-white">Neural Network And Fuzzy Logic</h2>
+                    <p class="text-white">Class code:
+                        tlc2fqd
+                    </p>
                 </div>
             </div>
         </div>
@@ -107,10 +133,24 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="mb-4">
-                        <h4 class="m-4">Announce something to your class</h4>
+                <div class="col-md-9">
+                    <div id="announceOpen" class="my-4 card shadow">
+                        <div class="d-flex align-items-center p-2">
+                            <img class="postImg" src="images/Jahedpic.jpg" alt="Jahed">
+                            <div class="p-1">
+                                <p class="m-3 card-title text-info">Announce something to your class</>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="announce" class="mb-3 d-none">
                         <div class="card shadow">
+                            <label class="p-3" for="dropdown">for</label>
+                            <select class="form-select mb-2" name="student" id="">
+                                <option value="">All student</option>
+                                <option value="">Jahed</option>
+                                <option value="">Tanbir</option>
+                                <option value="">Rejaul</option>
+                            </select>
                             <textarea class="form-control" name="editor1" id="" cols="50" rows="6"
                                 placeholder="Announce something to your class"></textarea>
                             <div class="p-4 d-flex justify-content-between">
@@ -123,120 +163,204 @@
                         </div>
                     </div>
 
-                    <div class="card w-100 mb-4 cardHover">
-                        <a class="text-decoration-none text-dark" href="postDetails.html">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="card-title">
-                                            Mohammad Shoaib Rahman posted a new assignment: Lab report all
-                                        </h5>
-                                        <p class="card-text text-muted">23 Jun</p>
-                                    </div>
-                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <div class="card w-100 mb-4">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/Jahedpic.jpg" alt="Jahed" class="postImg">
-                                    <div class="p-2">
-                                        <h5 class="card-title">Md Jahed Miah</h5>
-                                        <p class="card-subtitle mb-2 text-muted">12:12</p>
-                                    </div>
-                                </div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Fuga ipsam doloribus qui corrupti ipsa quis odio eligendi voluptatibus culpa
-                                    impedit, totam similique deleniti illo sunt tempore earum non voluptates fugiat.</p>
-                                <hr class="w-100">
-                                <div>
-                                    <div class="mb-3">
-                                        <i class="fa fa-comment" aria-hidden="true"></i><span class="p-2">1 class
-                                            comment</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                                            <div class="d-flex align-items-center">
-                                                <h6 class="card-title p-2">Md Jahed Miah</h6>
-                                                <p class="card-subtitle mb-2 text-muted fs-6">yesterday</p>
-                                            </div>
-                                        </div>
-                                        <p class="card-text mb-2 fs-6">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing
-                                            elit.
-                                            Provident, beatae repellat placeat cupiditate eveniet magni tempore
-                                            laboriosam veniam illo magnam?</p>
-                                    </div>
-                                </div>
-                                <hr class="w-100">
-                                <div class="d-flex align-items-center position-relative">
-                                    <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                                    <textarea class="form-control comment m-2" name="" id="" cols="20"
-                                        rows="1"></textarea>
-                                    <i class="far fa-arrow-alt-circle-right fa-2x commentSend"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card w-100 mb-4">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/Jahedpic.jpg" alt="Jahed" class="postImg">
-                                    <div class="p-2">
-                                        <h5 class="card-title">Md Jahed Miah</h5>
-                                        <p class="card-subtitle mb-2 text-muted">12:12</p>
-                                    </div>
-                                </div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Fuga ipsam doloribus qui corrupti ipsa quis odio eligendi voluptatibus culpa
-                                    impedit, totam similique deleniti illo sunt tempore earum non voluptates fugiat.</p>
-                                <hr class="w-100">
-                                <div>
-                                    <div class="mb-3">
-                                        <i class="fa fa-comment" aria-hidden="true"></i><span class="p-2">1 class
-                                            comment</span>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex align-items-center">
-                                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                                            <div class="d-flex align-items-center">
-                                                <h6 class="card-title p-2">Md Jahed Miah</h6>
-                                                <p class="card-subtitle mb-2 text-muted fs-6">yesterday</p>
-                                            </div>
-                                        </div>
-                                        <p class="card-text mb-2 fs-6">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing
-                                            elit.
-                                            Provident, beatae repellat placeat cupiditate eveniet magni tempore
-                                            laboriosam veniam illo magnam?</p>
-                                    </div>
-                                </div>
-                                <hr class="w-100">
-                                <div class="d-flex align-items-center position-relative">
-                                    <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
-                                    <textarea class="form-control comment m-2" name="" id="" cols="20"
-                                        rows="1"></textarea>
-                                    <i class="far fa-arrow-alt-circle-right fa-2x commentSend"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5">
-                    <div class="card w-100 mt-4">
+                    <div class="card mb-3 shadow">
                         <div class="card-body">
-                            <h5 class="card-title">Upcoming</h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <i class="bg-info postImg fas fa-tasks fa-2x text-white"></i>
+                                <div class="">
+                                    <div class="d-flex akigb-items-center">
+                                        <span class="d-block asQXV"> Mohammad Shoaib Rahman posted a new assignment: Lab
+                                            report all (merged)</span>
+                                        <span class="PazDv text-muted"> 12:12</span>
+                                    </div>
+                                </div>
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card w-100 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Jahedpic.jpg" alt="Jahed" class="postImg">
+                                    <div class="p-2">
+                                        <span class="d-block asQXV"> Md Jahed Miah</span>
+                                        <span class="PazDv text-muted"> 12:12</span>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><button class="dropdown-item" type="button">Delete</button></li>
+                                        <li><button class="dropdown-item" type="button">Copy Link</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Mute Jahed</button></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="text-center rounded img-thumbnail mb-2">
+                                <img class="img-fluid w-50 h-25" src="images/Jahedpic.jpg" alt="">
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the
+                                bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Fuga ipsam doloribus qui corrupti ipsa quis odio eligendi voluptatibus
+                                culpa
+                                impedit, totam similique deleniti illo sunt tempore earum non voluptates fugiat.
+                            </p>
+                            <hr class="w-100">
+                            <div>
+                                <div class="mb-3">
+                                    <i class="fa fa-comment" aria-hidden="true"></i><span class="p-2">1 class
+                                        comment</span>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                            <div class="d-flex p-2">
+                                                <span class="asQXV me-2">Md Jahed Miah </span>
+                                                <span class="PazDv text-muted"> yesterday</>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <li><button class="dropdown-item" type="button">Edit</button>
+                                                </li>
+                                                <li><button class="dropdown-item" type="button">Delete</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mb-2 fs-6">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Provident, beatae repellat placeat cupiditate eveniet magni tempore
+                                        laboriosam veniam illo magnam?</p>
+                                </div>
+                            </div>
+                            <hr class="w-100">
+                            <div class="d-flex align-items-center position-relative">
+                                <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                <textarea class="form-control comment m-2" name="" id="" cols="20" rows="1"></textarea>
+
+                                <i class="fas fa-share fa-2x commentSend"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card w-100 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="images/Jahedpic.jpg" alt="Jahed" class="postImg">
+                                <div class="p-2">
+                                    <span class="d-block asQXV"> Md Jahed Miah</span>
+                                    <span class="PazDv text-muted"> 12:12</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the
+                                bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Fuga ipsam doloribus qui corrupti ipsa quis odio eligendi voluptatibus
+                                culpa
+                                impedit, totam similique deleniti illo sunt tempore earum non voluptates fugiat.
+                            </p>
+                            <hr class="w-100">
+                            <div>
+                                <div class="mb-3">
+                                    <i class="fa fa-comment" aria-hidden="true"></i><span class="p-2">1 class
+                                        comment</span>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                        <div class="d-flex p-2">
+                                            <span class="asQXV me-2">Md Jahed Miah </span>
+                                            <span class="PazDv text-muted"> yesterday</span>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mb-2 fs-6">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Provident, beatae repellat placeat cupiditate eveniet magni tempore
+                                        laboriosam veniam illo magnam?</p>
+                                </div>
+                            </div>
+                            <hr class="w-100">
+                            <div class="d-flex align-items-center position-relative">
+                                <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                <textarea class="form-control comment m-2" name="" id="" cols="20" rows="1"></textarea>
+                                <i class="far fa-arrow-alt-circle-right fa-2x commentSend"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card w-100 mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="images/Jahedpic.jpg" alt="Jahed" class="postImg">
+                                <div class="p-2">
+                                    <h5 class="card-title">Md Jahed Miah</h5>
+                                    <p class="card-subtitle mb-2 text-muted">12:12</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the
+                                bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Fuga ipsam doloribus qui corrupti ipsa quis odio eligendi voluptatibus
+                                culpa
+                                impedit, totam similique deleniti illo sunt tempore earum non voluptates fugiat.
+                            </p>
+                            <hr class="w-100">
+                            <div>
+                                <div class="mb-3">
+                                    <i class="fa fa-comment" aria-hidden="true"></i><span class="p-2">1 class
+                                        comment</span>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="card-title p-2">Md Jahed Miah</h6>
+                                            <p class="card-subtitle mb-2 text-muted fs-6">yesterday</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text mb-2 fs-6">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Provident, beatae repellat placeat cupiditate eveniet magni tempore
+                                        laboriosam veniam illo magnam?</p>
+                                </div>
+                            </div>
+                            <hr class="w-100">
+                            <div class="d-flex align-items-center position-relative">
+                                <img src="images/Jahedpic.jpg" alt="Jahed" class="commentImg">
+                                <textarea class="form-control comment m-2" name="" id="" cols="20" rows="1"></textarea>
+                                <i class="far fa-arrow-alt-circle-right fa-2x commentSend"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 mt-4">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <h5 class="card-subtitle mb-2 text-muted ">UpComing</h5>
                             <p class="card-text">Woohoo, no work due in soon!</p>
                         </div>
-                        <div class="m-4 d-flex justify-content-end"><a href="#">view all</a></div>
+                        <div class="mb-3 mx-3 d-flex justify-content-end"><a href="#">view all</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,6 +381,12 @@
         // Get the current year for the copyright
         // $('#year').text(new Date().getFullYear());
         CKEDITOR.replace('editor1');
+
+        const announce = document.getElementById("announce");
+        const announceOpen = document.getElementById("announceOpen");
+        announceOpen.addEventListener("click", function () {
+            announce.classList.remove("d-none");
+        })
     </script>
 
 </body>
